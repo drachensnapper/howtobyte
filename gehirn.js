@@ -8,7 +8,7 @@ function bin2dec( binary )
 
 function bin2hex( binary )
 {
-  return hex;
+  return dec2hec(bin2dec(binary));
 }
 
 function bin2ascii( binary )
