@@ -64,6 +64,11 @@ function ascii2dec( ascii )
 
 function ascii2hex( hex )
 {
-  return hex;
+  var arr = [];
+  for (var i = 0, l = hex.length; i < l; i ++) {
+    var hexnumber = Number(hex.charCodeAt(i)).toString(16);
+    arr.push(hexnumber);
+  }
+  return arr.join('');
 }
 
