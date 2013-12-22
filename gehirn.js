@@ -29,7 +29,7 @@ function dec2hex( decimal )
 
 function dec2ascii( decimal )
 {
-  return ascii;
+  return hex2ascii( dec2hex( decimal ) );
 }
 
 // hex >>
