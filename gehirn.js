@@ -8,12 +8,12 @@ function bin2dec( binary )
 
 function bin2hex( binary )
 {
-  return dec2hec(bin2dec(binary));
+  return dec2hex(bin2dec(binary));
 }
 
 function bin2ascii( binary )
 {
-  return ascii;
+  return hex2ascii( bin2hex( binary ) );
 }
 
 // decimal >>
