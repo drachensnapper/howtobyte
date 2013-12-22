@@ -30,6 +30,17 @@ function decToHex( decimal ) {
     return decimal.toString(16);
 }
 
+function hex2string(){
+   
+}
+
+function hex2a(hex) {
+        var str = '';
+        for (var i = 0; i < hex.length; i += 2)
+            str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+        return str;
+}
+
 function onTheClick(){
 
     document.getElementById("bin2hexout").innerHTML = bin2dec ("0011");
