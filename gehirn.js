@@ -48,3 +48,19 @@ function hex2ascii( hex )
   return ascii;
 }
 
+// ascii >>
+function ascii2bin( ascii )
+{
+  return binary;
+}
+
+function ascii2dec( ascii )
+{
+  return dec;
+}
+
+function ascii2hex( hex )
+{
+  return hex;
+}
+
