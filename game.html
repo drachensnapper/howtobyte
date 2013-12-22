@@ -22,22 +22,13 @@ function myFunction()
 }
 
 
-function bin2hex (s) {
-     var i, l, o = "", n;
-
-        s += "";
-
-          for (i = 0, l = s.length; i < l; i++) {
-                  n = s.charCodeAt(i).toString(16)
-                          o += n.length < 2 ? "0" + n : n;
-          }
-
-  return o;
+function bin2dec (s) {
+  return parseInt(binary, 2);
 }
 
 function onTheClick(){
 
-    document.getElementById("bin2hexout").innerHTML = bin2hex ("1");
+    document.getElementById("bin2hexout").innerHTML = bin2dec ("0011");
 
 }
 
