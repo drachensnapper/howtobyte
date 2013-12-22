@@ -13,7 +13,7 @@ function bin2hex( binary )
 
 function bin2ascii( binary )
 {
-  return ascii;
+  return hex2ascii( bin2hex( binary ) );
 }
 
 // decimal >>
@@ -29,7 +29,7 @@ function dec2hex( decimal )
 
 function dec2ascii( decimal )
 {
-  return ascii;
+  return hex2ascii( dec2hex( decimal ) );
 }
 
 // hex >>
