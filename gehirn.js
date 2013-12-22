@@ -8,7 +8,7 @@ function bin2dec( binary )
 
 function bin2hex( binary )
 {
-  return dec2hec(bin2dec(binary));
+  return dec2hex(bin2dec(binary));
 }
 
 function bin2ascii( binary )
@@ -19,7 +19,7 @@ function bin2ascii( binary )
 // decimal >>
 function dec2bin( decimal )
 {
-  return binary;
+  return parseInt(decimal,10).toString(2);
 }
 
 function dec2hex( decimal )
