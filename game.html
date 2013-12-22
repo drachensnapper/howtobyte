@@ -2,4 +2,49 @@
 
 Welcome to HOWTO BYTE!
 
+<!DOCTYPE html>
+<body>
+
+<h1>Welcome to HOWTO BYTE</h1>
+<p id="demo"></p>
+
+<button type="button" onclick="onTheClick()">Click to convert</button>
+
+<div id="bin2hexout">
+
+</div>
+
+<script>
+
+function myFunction()
+{
+    document.getElementById("demo").innerHTML = Date();
+}
+
+
+function bin2hex (s) {
+     var i, l, o = "", n;
+
+        s += "";
+
+          for (i = 0, l = s.length; i < l; i++) {
+                  n = s.charCodeAt(i).toString(16)
+                          o += n.length < 2 ? "0" + n : n;
+          }
+
+  return o;
+}
+
+function onTheClick(){
+
+    document.getElementById("bin2hexout").innerHTML = bin2hex ("1100");
+
+}
+
+
+</script>
+
+</body>
 </html>
+
+
