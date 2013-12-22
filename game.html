@@ -1,5 +1,8 @@
 <html>
 
+<head>
+    <script type="text/javascript" src="gehirn.js"></script>
+</head>
 Welcome to HOWTO BYTE!
 
 <!DOCTYPE html>
@@ -22,32 +25,11 @@ function myFunction()
 }
 
 
-function bin2dec ( binary ) {
-  return parseInt( binary, 2 );
-}
-
-function decToHex( decimal ) {
-    return decimal.toString(16);
-}
-
-function hex2string(){
-   
-}
-
-function hex2a(hex) {
-        var str = '';
-        for (var i = 0; i < hex.length; i += 2)
-            str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
-        return str;
-}
-
 function onTheClick(){
 
     //document.getElementById("bin2hexout").innerHTML = bin2dec ("0011");
 
-    document.getElementById("bin2hexout").innerHTML = hex2a ("41414141");
-
-    
+    document.getElementById("bin2hexout").innerHTML = hex2ascii("41414141");
 
 }
 
