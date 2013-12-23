@@ -31,16 +31,14 @@ function dec2ascii( decimal )
 {
   return hex2ascii( dec2hex( decimal ) );
 }
-
 // hex >>
-function hex2bin( hex )
-{
-  return binary;
+function hex2bin( hex ){
+    return dec2bin(hex2dec(hex));
 }
 
 function hex2dec( hex )
 {
-  return dec;
+  return parseInt(hex,16);
 }
 
 function hex2ascii( hex )
@@ -54,12 +52,12 @@ function hex2ascii( hex )
 // ascii >>
 function ascii2bin( ascii )
 {
-  return binary;
+  return hex2bin(ascii2hex(ascii));
 }
 
 function ascii2dec( ascii )
 {
-  return dec;
+  return hex2dec(ascii2hex(ascii));
 }
 
 function ascii2hex( hex )
