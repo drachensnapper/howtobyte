@@ -1,17 +1,42 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <script type="text/javascript" src="Brain.js"></script>
+    <script type="text/javascript" src="Game.js"></script>
+	<script type="text/javascript" src="Brain.js"></script>
 </head>
-Welcome to HOWTO BYTE!
 
-<!DOCTYPE html>
 <body>
 
-<h1>Welcome to HOWTO BYTE</h1>
-<p id="demo"></p>
+<h1>WHOWTOBYTE</h1>
 
-<button type="button" onclick="onTheClick()">Click to convert</button>
+<div id="challenge">
+<p>
+CHALLENGE<br>
+<span id="challenge_number"> void </span><br>
+<button type="button" onclick="Game.generateDec()">DEC</button>
+<button type="button" onclick="Game.generateBin()">BIN</button>
+<button type="button" onclick="Game.generateHex()">HEX</button>
+<button type="button" onclick="Game.generateAscii()">ASCII</button>
+</p>
+</div>
+
+
+
+
+<div id="solution">
+<p>
+SOLUTION<br>
+dec: <input type="text" id="input_dec"><button type="button" onclick="Game.solutionDec()">Submit</button><br>
+bin: <input type="text" id="input_bin"><button type="button" onclick="Game.solutionBin()">Submit</button><br>
+hex: <input type="text" id="input_hex"><button type="button" onclick="Game.solutionHex()">Submit</button><br>
+ascii: <input type="text" id="input_ascii"><button type="button" onclick="Game.solutionAscii()">Submit</button><br>
+</p>
+</div>
+
+<div id="output">
+</div>
+
 
 <div id="bin2hexout">
 
