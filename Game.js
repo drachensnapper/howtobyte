@@ -36,6 +36,7 @@ var Game = new function()
 	}
 	
 	this.generateAscii = function() {
+		generateRandomChallengeNumber();
 		document.getElementById('challenge_number').innerHTML = Brain.dec2ascii( challengeNumber );
 	}
 		
