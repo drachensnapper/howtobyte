@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="Brain.js"></script>
+</head>
+
+<body>
+
+<h1>HOWTOBYTE BRAIN TEST</h1>
+
+Info: check the console for any output...
+
+<script>
+
+console.log('DEC');
+var number = 100;
+console.log ( 'dec: ' + number );
+console.log( 'bin: ' + Brain.dec2bin( number ) );
+console.log( 'hex: ' + Brain.dec2hex( number ) );
+console.log( 'ascii: ' + Brain.dec2ascii( number ) );
+
+console.log('BIN');
+number = '1100100';
+console.log ( 'bin:' + number );
+console.log( 'dec: ' + Brain.bin2dec( number ) );
+console.log( 'hex: ' + Brain.bin2hex( number ) );
+console.log( 'ascii: ' + Brain.bin2ascii( number ) );
+
+console.log('HEX');
+number = '64'; 
+console.log ( 'hex:' + number );
+console.log( 'dec: ' + Brain.hex2dec( number ) );
+console.log( 'bin: ' + Brain.hex2bin( number ) );
+console.log( 'ascii: ' + Brain.hex2ascii( number ) );
+
+console.log('ASCII');
+number = 'd'; 
+console.log ( 'ascii:' + number );
+console.log( 'dec: ' + Brain.ascii2dec( number ) );
+console.log( 'bin: ' + Brain.ascii2bin( number ) );
+console.log( 'hex: ' + Brain.ascii2hex( number ) );
+
+</script>
+
+</body>
+</html>
+
+
