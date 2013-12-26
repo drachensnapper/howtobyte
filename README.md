@@ -1,6 +1,4 @@
-howtobyte
+HOWTOBYTE
 =========
 
-Game HowtoByte
-
-TEST
+Game HOWTOBYTE
